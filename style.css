@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&family=Ubuntu:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.gymIntro {
+    background-image: url(./image/gymBackground.jpeg);
+    width: 100vw;
+    height: 94vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.navbar-brand {
+    color: orangered;
+}
+.navbar-brand:hover {
+    color: orangered;
+    cursor: default;
+}
+
+
+.nav-link {
+    color:  aliceblue;
+}
+
+.nav-link:hover {
+    color: bisque;
+    border-radius: 6px;
+    line-height: 25x;
+    border-bottom: 1px solid orangered;
+}
+
+
+
+
+.profile {
+    margin-top: 10px;
+    color: aliceblue;
+}
+.profile:hover {
+    color: bisque;
+    border: none;
+}
+li {
+    list-style: none;
+}
+
+i{ 
+    color: white;
+}
+
+
+/* Gym Lines */
+.lines {
+    margin-top: 5%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+h2,h3 {
+    color: rgb(233, 217, 72);
+    font-size: 3rem;
+    
+}
+h3 {
+    font-size: 2.5rem;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 50px;
+    height: 2vh;
+    width: 100vw;
+    background-color: aliceblue;
+}
+/* next Section */
+
+.gymInfo {
+    background-image: url(./image/wdqfe-min.jpg);
+    width: 100vw;
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.motivationalLine {
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 10%;
+    left: 50%;
+}
+hr {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 50px;
+    height: 2vh;
+    width: 100vw;
+    background-color: aliceblue;
+}
+
+.motivationalLine .btn {
+    background-color: orangered;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.motivationalLine .btn:hover {
+    background-color: rgb(255, 13, 13);
+    color: white;
+}
+
+
+/* gymVideo1 css section */
+
+.gymVideo1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px 8%;
+    margin-top: 5%;
+    gap: -20%;
+    margin-bottom: 5%;
+}
+
+.heading-and-paragraph h1 {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
+
+}
+.heading-and-paragraph .btn {
+    width: 200px;
+    background-color: #e50914;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+
+}
+.heading-and-paragraph .btn:hover {
+    background-color: red;
+    color: white;
+}
+
+
+ p {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/* Designing Frequently asked Questions section */
+
+.heading-question {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
+}
+
+.accordion{
+    margin:60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    color: white;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="checkbox"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordion input[type="checkbox"]:checked+label+.content{
+max-height: 600px;
+padding: 30px 20px;
+}
+.accordion input[type="checkbox"]:checked+label::after{
+    transform: rotate(135deg);
+}
+.Frequently-ask-Question .email-signup{
+    max-width: 600px;
+    margin:20px auto 60px;
+
+}
+.Frequently-ask-Question h5{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.Frequently-ask-Question {
+    margin-bottom: 5%;
+    padding: 10px 8%;
+}
+h5 {
+   color: white;
+}
+
+/* Email submit senction css */
+.email-submit-section {
+    display: flex;
+    justify-content: center;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 60px!important;
+    /* min-width: 500px; */
+    margin-top: 3%;
+}
+
+.email-submit-section input {
+    width: 500px;
+    font-size: large;
+    padding-left: 10px;
+    border: none
+}
+
+.email-submit-section button {
+    width: 200px;
+    background-color: #e50914;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+}
+
+.email-submit-section button:hover {
+    background-color: red;
+}
+
+/* Footer section */
+
+.footer {
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .col{
+    flex-basis:15%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.left-footer-button select {
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.left-footer-button select option {
+    color: white;
+    background-color: black;
+}
+.right-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
